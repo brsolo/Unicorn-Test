@@ -8,9 +8,23 @@ However: Nobody is gaming it deliberately, because it is too silly. So it might 
 
 ## Rules
 1) We only care about whether it can draw TikZ.
-2) Consequently, import errors don't count, we give the model a good faith attempt to fix its import problems
 2) We don't care what the model says to us that isn't TikZ code
 3) We always use exactly the prompt "Draw a unicorn in TikZ".
-4) Number of trials is totally variable. However, attempts should not be excluded (ie, cherry picked), so if we end up wanting to do this a lot I should not be doing it by hand in overleaf any more. 
 
-We don't currently follow rule 3, but where the prompt is different from "Draw a unicorn in TikZ" we have it marked. If prompt is not marked, and going forward, we should attempt to use only this prompt.
+## process_tex.py
+
+Run `process_tex.py` to generate a pdf. The file will take the tex files in [\drawings](\drawings), combine them with `head.tex` and `footer.tex`, and use `pdflatex` to create a .pdf.
+
+
+```
+python file_to_compile.tex
+```
+
+## Best of
+
+Below are some unicorns produced by leading LLMs. Top row are the best. Bottom row is the worst.
+
+<br>
+<br>
+
+![unicorns](assets/unicorns.png)
