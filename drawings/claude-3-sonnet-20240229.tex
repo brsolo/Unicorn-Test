@@ -1,0 +1,31 @@
+\begin{tikzpicture}[scale=0.8]
+    % Body
+    \draw[thick, fill=white] (0, 0) circle (2cm);
+    
+    % Head
+    \draw[thick, fill=white] (2.5, 1.5) circle (1cm);
+    
+    % Ear
+    \draw[thick, fill=white] (3.5, 2.2) .. controls (3.2, 2.7) and (3.7, 2.7) .. (3.4, 2.2) .. controls (3.7, 1.7) and (3.2, 1.7) .. (3.5, 2.2) -- cycle;
+    
+    % Eye
+    \draw[thick, fill=black] (3, 1.5) circle (0.2cm);
+    
+    % Muzzle
+    \draw[thick, fill=pink] (3.5, 1) ellipse (0.5cm and 0.3cm);
+    
+    % Horn
+    \draw[thick, fill=yellow] (3.8, 2.3) .. controls (4.2, 3.3) and (4.6, 3.3) .. (5, 2.3) .. controls (4.6, 1.3) and (4.2, 1.3) .. (3.8, 2.3) -- cycle;
+    
+    % Mane
+    \draw[thick, fill=white, rotate around={-20:(2.5, 1.5)}] (2.5, 1.5) .. controls (2.2, 2) and (2.8, 2) .. (2.5, 1.5);
+    
+    % Legs
+    \draw[thick] (0, -1) -- (0, -2.5);
+    \draw[thick] (0.5, -1) -- (0.5, -2.5);
+    \draw[thick] (-0.5, -1) -- (-0.5, -2.5);
+    \draw[thick] (1, -1) -- (1, -2.5);
+    
+    % Tail
+    \draw[thick, fill=white] (0, 0.5) .. controls (-0.5, 1) and (-1, 0.5) .. (-1.5, 0) .. controls (-1, -0.5) and (-0.5, -1) .. (0, -0.5) -- cycle;
+\end{tikzpicture}

@@ -1,0 +1,36 @@
+\begin{tikzpicture}
+  % Body
+  \fill[white] (0,0) circle (1.5);
+  \fill[gray!20] (-1.2,0.5) -- (-1.2,-0.5) -- (1.2,-0.5) -- (1.2,0.5) -- cycle;
+  
+  % Neck
+  \fill[white] (-1,0.5) -- (-1,1.5) -- (-0.8,1.5) -- (-0.8,0.5) -- cycle;
+  
+  % Head
+  \fill[white] (-1.2,1.5) -- (-1.2,2.5) -- (-0.6,2.5) -- (-0.6,1.5) -- cycle;
+  
+  % Horn
+  \fill[gray!50] (-0.9,2.3) -- (-0.9,3.3) -- (-0.7,3.3) -- (-0.7,2.3) -- cycle;
+  
+  % Eyes
+  \fill[black] (-1.1,2.2) circle (0.1);
+  \fill[black] (-0.7,2.2) circle (0.1);
+  
+  % Mouth
+  \draw[thick] (-0.9,2.0) -- (-0.7,2.0);
+  
+  % Mane
+  \foreach \x in {-1.2,-1.0,...,-0.4} {
+    \draw[-,thick,gray!50] (\x,1.5) -- (\x,2.2);
+  }
+  
+  % Legs
+  \foreach \x in {-1.2,-0.8,0.8,1.2} {
+    \fill[gray!20] (\x,-0.5) -- (\x,0) -- (\x+0.2,0) -- (\x+0.2,-0.5) -- cycle;
+  }
+  
+  % Hooves
+  \foreach \x in {-1.2,-0.8,0.8,1.2} {
+    \fill[black] (\x,-0.7) circle (0.1);
+  }
+\end{tikzpicture}

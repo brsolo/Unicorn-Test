@@ -1,0 +1,23 @@
+\begin{tikzpicture}[scale=0.5]
+% Body
+\filldraw[fill=pink!50!white, draw=black] (0,0) rectangle (4,6);
+% Head
+\filldraw[fill=pink!50!white, draw=black] (5,3) circle (2cm);
+% Eyes
+\filldraw[fill=white, draw=black] (5.8,3.5) circle (0.2cm);
+\filldraw[fill=white, draw=black] (4.2,3.5) circle (0.2cm);
+% Pupils
+\filldraw[fill=black, draw=black] (5.8,3.5) circle (0.1cm);
+\filldraw[fill=black, draw=black] (4.2,3.5) circle (0.1cm);
+% Nose
+\filldraw[fill=pink!50!white, draw=black] (5,2.5) -- (5.5,3) -- (4.5,3) -- cycle;
+% Horn
+\draw[ultra thick, draw=orange] (5,5) -- ++(0,2) -- ++(-1,0) -- ++(0,-1) -- ++(1,0) -- ++(0,1) -- ++(-0.5,0) -- ++(0,-2) -- cycle;
+% Legs
+\draw[thick, draw=black] (0,0) -- ++(0,-1) -- ++(1,0) -- ++(0,-1) -- ++(1,0);
+\draw[thick, draw=black] (4,0) -- ++(0,-1) -- ++(1,0) -- ++(0,-1) -- ++(1,0);
+\draw[thick, draw=black] (0,6) -- ++(0,1) -- ++(1,0) -- ++(0,1) -- ++(1,0);
+\draw[thick, draw=black] (4,6) -- ++(0,1) -- ++(1,0) -- ++(0,1) -- ++(1,0);
+% Tail
+\draw[thick, draw=black] (4,3) -- ++(1,0) -- ++(-0.5,1) -- ++(-1,0);
+\end{tikzpicture}

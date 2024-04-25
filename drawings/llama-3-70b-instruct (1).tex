@@ -1,0 +1,32 @@
+\begin{tikzpicture}[scale=0.5]
+  % Body
+  \fill[white] (0,0) circle (3);
+  \fill[gray!20] (0,0) circle (2.5);
+  
+  % Neck
+  \fill[white] (-1.5,2) ellipse (1.5 and 0.75);
+  \fill[gray!20] (-1.5,2) ellipse (1.2 and 0.6);
+  
+  % Head
+  \fill[white] (-2.5,3.5) ellipse (1 and 0.6);
+  \fill[gray!20] (-2.5,3.5) ellipse (0.8 and 0.5);
+  
+  % Horn
+  \fill[gray!50] (-2.5,4.5) ellipse (0.4 and 0.2);
+  
+  % Eyes
+  \fill[black] (-2.2,3.7) circle (0.1);
+  \fill[black] (-2.8,3.7) circle (0.1);
+  
+  % Mane
+  \foreach \x in {-2.5,-2.2,...,0.5}
+    \fill[gray!50] (\x,3.8) circle (0.1);
+  
+  % Legs
+  \foreach \x in {-1.5,-0.5,0.5,1.5}
+    \fill[gray!20] (\x,-1.5) ellipse (0.5 and 0.3);
+  
+  % Hooves
+  \foreach \x in {-1.5,-0.5,0.5,1.5}
+    \fill[black] (\x,-2.2) ellipse (0.3 and 0.2);
+\end{tikzpicture}
